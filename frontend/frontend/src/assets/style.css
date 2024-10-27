@@ -1,0 +1,48 @@
+/* 页面容器，使用 flex 布局 */
+.home-page {
+  display: flex;
+  height: 100vh;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+  width: 200px;
+  /* 固定宽度 */
+  background-color: rgba(0, 172, 193, 0.3);
+  /* 青色背景，透明度30% */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  /* 添加轻微阴影，区分侧边栏和内容 */
+}
+
+/* 侧边栏列表样式 */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #006064;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #00acc1;
+  box-shadow: 0 0 8px rgba(0, 172, 193, 0.8);
+}
+
+/* 内容部分样式 */
+.content {
+  margin-left: 80px;
+  flex-grow: 1;
+  padding: 20px;
+  width: 1300px;
+  overflow-y: auto;
+}
